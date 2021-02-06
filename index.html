@@ -91,7 +91,7 @@ body {font-size:16px;}
     
     <form name="cool1397">
       <label>Please enter your number, we will call you shortly</label>
-      <input name="email" type="number" placeholder="phone number" required>
+      <input id="num12" name="email" type="number" placeholder="phone number" required>
       <button type="submit">Send</button>
     </form>  
   </div>
@@ -102,9 +102,11 @@ body {font-size:16px;}
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        .then(response => document.getElementById('num12').value = '')
         .catch(error => console.error('Error!', error.message))
-    })
+        
+      })
+
   </script>
 <!-- End page content -->
 </div>
