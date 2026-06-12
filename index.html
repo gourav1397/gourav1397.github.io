@@ -94,9 +94,11 @@ body {font-size:16px;}
     <h1 class="w3-xxxlarge w3-text-red"><b>Contact us on 9911507004.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     
-    <form name="cool1397">
+    <form action="https://formsubmit.co/gourav1397@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New GoHankies order request">
+      <input type="hidden" name="_captcha" value="false">
       <label>Please enter your number, for any order</label>
-      <input id="num12" name="email" type="number" placeholder="phone number" required>
+      <input id="num12" name="phone" type="number" placeholder="phone number" required>
       <button type="submit">Send</button>
     </form>  
   </div>
@@ -105,19 +107,6 @@ body {font-size:16px;}
       <img src="https://hits.sh/gourav1397.github.io.svg?label=Visitors" alt="Visitor count">
     </div>
   </div>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyRhIw5zGuUs520DRbQRwVVJe_6koxvZsWisk_wu74NYw-k7PMrvHJ1/exec'
-    const form = document.forms['cool1397']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-        document.getElementById('num12').value = ''
-      })
-
-  </script>
 <!-- End page content -->
 </div>
 
