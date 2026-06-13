@@ -52,7 +52,7 @@ body {font-size:16px;background:#fff8f4;color:#2b2320;}
 .hero-note{max-width:760px;color:#5a4a43}
 .price-pill{display:inline-block;background:#fff1df;color:#9b2f11;padding:8px 12px;border-radius:6px;font-weight:bold}
 .gallery-grid{margin-top:26px}
-.product-photo{width:100%;height:360px;object-fit:cover;margin-top:18px;border-radius:8px;box-shadow:0 14px 34px rgba(61,35,22,0.18);cursor:pointer;transition:transform 180ms ease,box-shadow 180ms ease,filter 180ms ease}
+.product-photo{width:100%;height:auto;max-height:420px;object-fit:contain;background:white;margin-top:18px;border-radius:8px;box-shadow:0 14px 34px rgba(61,35,22,0.18);cursor:pointer;transition:transform 180ms ease,box-shadow 180ms ease,filter 180ms ease}
 .product-photo:hover{transform:translateY(-4px);box-shadow:0 20px 42px rgba(61,35,22,0.24);filter:saturate(1.08) contrast(1.04)}
 .visitor-counter{display:inline-block;margin-top:32px;margin-bottom:32px;padding:10px 14px;background:#fff;border-left:5px solid #b72126;font-weight:bold;box-shadow:0 10px 26px rgba(83,42,25,0.1)}
 .visitor-counter img{display:block;height:20px}
@@ -71,8 +71,8 @@ body {font-size:16px;background:#fff8f4;color:#2b2320;}
 .section-panel{background:white;padding:28px;margin-top:75px;box-shadow:0 14px 34px rgba(83,42,25,0.1)}
 .section-panel h2{font-size:34px;color:#b72126}
 .section-panel hr{border-color:#b72126!important}
-@media (max-width:992px){.hero-panel{margin-top:72px}.product-photo{height:300px}}
-@media (max-width:600px){.hero-panel{padding:24px}.hero-panel h1{font-size:32px}.contact-fields{display:block}.contact-field{margin-bottom:12px}.product-photo{height:260px}}
+@media (max-width:992px){.hero-panel{margin-top:72px}.product-photo{max-height:360px}}
+@media (max-width:600px){.hero-panel{padding:24px}.hero-panel h1{font-size:32px}.contact-fields{display:block}.contact-field{margin-bottom:12px}.product-photo{max-height:none}}
 </style>
 </head>
 <body>
@@ -143,15 +143,19 @@ body {font-size:16px;background:#fff8f4;color:#2b2320;}
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding gallery-grid">
     <div class="w3-half">
-      <img class="product-photo" src="images/download1.jpg" onclick="onClick(this)" alt="Gourav Hankies cotton handkerchief design">
-      <img class="product-photo" src="images/download8.jpg" onclick="onClick(this)" alt="Wholesale printed handkerchief collection" loading="lazy">
-      <img class="product-photo" src="images/download3.jpg" onclick="onClick(this)" alt="Gourav handkerchief product sample" loading="lazy">
+      <img class="product-photo" src="images/new/premium-beige-handkerchief.jpg" onclick="onClick(this)" alt="Premium beige border Gourav Hankies handkerchief">
+      <img class="product-photo" src="images/new/gourav-premium-pack.jpg" onclick="onClick(this)" alt="Gourav premium handkerchief pack with blue border" loading="lazy">
+      <img class="product-photo" src="images/new/premium-weave-pack.jpg" onclick="onClick(this)" alt="Gourav premium gespunah weave handkerchief pack" loading="lazy">
+      <img class="product-photo" src="images/refined/download1-refined.jpg" onclick="onClick(this)" alt="Gourav Hankies cotton handkerchief design">
+      <img class="product-photo" src="images/refined/download8-refined.jpg" onclick="onClick(this)" alt="Wholesale printed handkerchief collection" loading="lazy">
+      <img class="product-photo" src="images/refined/download3-refined.jpg" onclick="onClick(this)" alt="Gourav handkerchief product sample" loading="lazy">
     </div>
 
     <div class="w3-half">
-      <img class="product-photo" src="images/download10.jpg" onclick="onClick(this)" alt="Bulk handkerchief design sample" loading="lazy">
-      <img class="product-photo" src="images/download2.jpeg" onclick="onClick(this)" alt="Quality handkerchief fabric sample" loading="lazy">
-      <img class="product-photo" src="images/download15.jpg" onclick="onClick(this)" alt="Gourav Hankies handkerchief pack sample" loading="lazy">
+      <img class="product-photo" src="images/new/premium-blue-handkerchief.jpg" onclick="onClick(this)" alt="Premium blue border Gourav Hankies handkerchief" loading="lazy">
+      <img class="product-photo" src="images/refined/download10-refined.jpg" onclick="onClick(this)" alt="Bulk handkerchief design sample" loading="lazy">
+      <img class="product-photo" src="images/refined/download2-refined.jpg" onclick="onClick(this)" alt="Quality handkerchief fabric sample" loading="lazy">
+      <img class="product-photo" src="images/refined/download15-refined.jpg" onclick="onClick(this)" alt="Gourav Hankies handkerchief pack sample" loading="lazy">
     </div>
   </div>
 
